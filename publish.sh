@@ -43,4 +43,5 @@ echo "Publish CLI"
 cd $CURRENT_DIR/doric-cli && npm publish 
 
 echo "Publish iOS"
+xcodebuild -version
 cd $CURRENT_DIR && pod lib lint DoricCore.podspec --allow-warnings && pod lib lint DoricDevkit.podspec --allow-warnings
