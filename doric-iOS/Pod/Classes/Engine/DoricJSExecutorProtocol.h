@@ -22,6 +22,7 @@
 
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
+#import <JavaScriptCore/JSContext.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
