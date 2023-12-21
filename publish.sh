@@ -15,7 +15,7 @@ cd $CURRENT_DIR && sh bundle.sh
 # Modify
 
 ## JS
-cd $CURRENT_DIR/doric-js && npm version $CURRENT_VERSION --allow-same-version
+# cd $CURRENT_DIR/doric-js && npm version $CURRENT_VERSION --allow-same-version
 
 ## iOS
 sed -i "" "s/\(version[ ]*= \)'[0-9 \.]*'/\1'$CURRENT_VERSION'/g" $CURRENT_DIR/DoricCore.podspec
@@ -23,9 +23,9 @@ sed -i "" "s/\(version[ ]*= \)'[0-9 \.]*'/\1'$CURRENT_VERSION'/g" $CURRENT_DIR/D
 sed -i "" "s/\(version[ ]*= \)'[0-9 \.]*'/\1'$CURRENT_VERSION'/g" $CURRENT_DIR/DoricDevkit.podspec
 
 ## CLI
-echo $CURRENT_VERSION > $CURRENT_DIR/doric-cli/assets/version
+# echo $CURRENT_VERSION > $CURRENT_DIR/doric-cli/assets/version
 
-cd $CURRENT_DIR/doric-cli && npm version $CURRENT_VERSION --allow-same-version
+# cd $CURRENT_DIR/doric-cli && npm version $CURRENT_VERSION --allow-same-version
 
 # git save
 cd $CURRENT_DIR/
@@ -40,7 +40,7 @@ git push
 
 git push --tags
 echo "Publish CLI"
-cd $CURRENT_DIR/doric-cli && npm publish 
+# cd $CURRENT_DIR/doric-cli && npm publish 
 
 echo "Publish iOS"
 xcodebuild -version
