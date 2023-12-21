@@ -24,4 +24,6 @@ Doric iOS Devkit for debugging & hotload.
   s.dependency 'DoricCore'
 
   s.dependency 'SocketRocket'
+
+  s.xcconfig = {'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) JSC_OBJC_API_ENABLED=1' }
 end
