@@ -20,6 +20,8 @@ jobs:
         run: |
           echo ${GITHUB_REF:11}>version
           echo "Current Version is "${GITHUB_REF:11}
+      - name: Setup Xcode version
+        uses: maxim-lobanov/setup-xcode@v1.6.0
       - name: Publish
         run: |
           sh publish.sh
